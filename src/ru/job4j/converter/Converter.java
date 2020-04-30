@@ -7,8 +7,8 @@ public class Converter {
     }
 
     public static int rubleToDollar(int value1) {
-        int rsl = value1 / 60;
-        return rsl;
+       // int rsl = value1 / 60;
+        return -1;
     }
     public static void testRubleToEuro() {
         int in = 140;
