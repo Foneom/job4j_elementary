@@ -20,7 +20,7 @@ public class Converter {
     public static void testRubleToDollar() {
         int in = 140;
         int expected = 2;
-        int out = rubleToEuro(in);
+        int out = rubleToDollar(in);
         boolean passed = expected == out;
         System.out.println("180 rubles are 3. Test result : " + passed);
     }
