@@ -8,8 +8,9 @@ public class Converter {
 
     public static int rubleToDollar(int value1) {
         int rsl = value1 / 60;
-        return -rsl;
+        return rsl;
     }
+
     public static void testRubleToEuro() {
         int in = 140;
         int expected = 2;
@@ -17,6 +18,7 @@ public class Converter {
         boolean passed = expected == out;
         System.out.println("140 rubles are 2. Test result : " + passed);
     }
+
     public static void testRubleToDollar() {
         int in = 140;
         int expected = 2;
