@@ -26,4 +26,11 @@ public class CheckTest {
         boolean result = Check.mono(input);
         assertThat(result, is(false));
     }
+
+    @Test
+    public void checkFalse1() {
+        boolean[] input = new boolean[] {true, true, false};
+        boolean result = Check.mono(input);
+        assertThat(result, is(false));
+    }
 }
