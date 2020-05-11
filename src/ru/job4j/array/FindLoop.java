@@ -15,12 +15,10 @@ public class FindLoop {
     public static int indexOf (int[] date, int el, int start, int finish) {
         int rst = -1;
         for (int i = 0; i < date.length; i++) {
-            for (int j = start; j <= finish; j++) {
-                if (date[i] == el && date[i] == date[j]) {
+                if (date[i] == el && i >= start && i <= finish) {
                     return el;
                 }
             }
-        }
         return rst;
     }
 }
