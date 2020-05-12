@@ -32,7 +32,7 @@ public class MinDiapasonTest {
         assertThat(
                 MinDiapason.findMin(
                         new int[] {5, 1, 4, 2},
-                        0,2
+                        0,4
                 ),
                 is(1)
         );
