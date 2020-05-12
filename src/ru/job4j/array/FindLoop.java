@@ -16,7 +16,7 @@ public class FindLoop {
         int rst = -1;
         for (int i = 0; i < date.length; i++) {
                 if (date[i] == el && i >= start && i <= finish) {
-                    return el;
+                    return i;
                 }
             }
         return rst;
