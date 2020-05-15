@@ -14,7 +14,6 @@ public class TurnTest {
         int[] rsl = Turn.back(input);
         assertThat(rsl, is(expect));
     }
-
     @Test
     public void turnLength3() {
         int[] input = {0, 1, 2};

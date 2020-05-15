@@ -13,7 +13,6 @@ public class CheckTest {
         boolean result = Check.mono(input);
         assertThat(result, is(true));
     }
-
     @Test
     public void checkFalseAndTrue() {
         boolean[] input = new boolean[] {true, false, true};
@@ -26,7 +25,6 @@ public class CheckTest {
         boolean result = Check.mono(input);
         assertThat(result, is(true));
     }
-
     @Test
     public void checkFalse1() {
         boolean[] input = new boolean[] {true, true, false};

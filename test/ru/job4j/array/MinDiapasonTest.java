@@ -6,19 +6,19 @@ import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.*;
 
 public class MinDiapasonTest {
+
 @Test
-    public void firstMin(){
+    public void firstMin() {
     assertThat(
             MinDiapason.findMin(
                     new int[] {-1, 0, 5, 10},
-                    1,3
+                    1, 3
             ),
             is(0)
     );
 }
-
     @Test
-    public void secondMin(){
+    public void secondMin() {
         assertThat(
                 MinDiapason.findMin(
                         new int[] {-1, 5, 2, 10},
@@ -28,11 +28,11 @@ public class MinDiapasonTest {
         );
     }
     @Test
-    public void thirdMin(){
+    public void thirdMin() {
         assertThat(
                 MinDiapason.findMin(
                         new int[] {5, 1, 4, 2},
-                        0,4
+                        0, 4
                 ),
                 is(1)
         );

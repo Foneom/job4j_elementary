@@ -7,7 +7,6 @@ import org.junit.Test;
 
 public class ConverterTest {
 
-
     @Test
     public void whenConvert140RblThen2Euro() {
         int in = 140;
@@ -15,7 +14,6 @@ public class ConverterTest {
         int out = Converter.rubleToEuro(in);
         Assert.assertEquals(expected, out);
     }
-
     @Test
     public void whenConvert180RblThen3Dlr() {
         int in = 180;

@@ -6,7 +6,8 @@ import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.*;
 
 public class MatrixTest {
-@Test
+
+    @Test
     public void when2on2() {
     Matrix matrix = new Matrix();
     int[][] table = matrix.multiple(2);

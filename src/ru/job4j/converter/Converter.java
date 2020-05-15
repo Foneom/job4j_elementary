@@ -16,18 +16,15 @@ public class Converter {
         int rsl = value / 70;
         return rsl;
     }
-
     /**
      * конвертация рубля в доллар
      * @param value1
      * @return
      */
-
     public static int rubleToDollar(int value1) {
         int rsl = value1 / 60;
         return rsl;
     }
-
     /**
      * тест метода rubleToEuro
      */
@@ -48,12 +45,10 @@ public class Converter {
         boolean passed = expected == out;
         System.out.println("180 rubles are 3. Test result : " + passed);
     }
-
     /**
      * Main
      * @param args
      */
-
     public static void main(String[] args) {
         int euro = Converter.rubleToEuro(140);
         int dollar = Converter.rubleToDollar(180);

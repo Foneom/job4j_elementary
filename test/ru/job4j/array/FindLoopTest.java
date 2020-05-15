@@ -27,7 +27,7 @@ public class FindLoopTest {
     }
 
     @Test
-    public void findElement(){
+    public void findElement() {
         FindLoop findLoop = new FindLoop();
         int[] input = new int[] {5, 10, 3};
         int value = 3;
@@ -37,9 +37,8 @@ public class FindLoopTest {
         int expect = 2;
         assertThat(result, is(expect));
     }
-
     @Test
-    public void notFindElement(){
+    public void notFindElement() {
         FindLoop findLoop = new FindLoop();
         int[] input = new int[] {5, 10, 3, 2, 1, 4};
         int value = 5;

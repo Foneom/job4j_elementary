@@ -16,7 +16,6 @@ public class MatrixCheckTest {
             boolean result = MatrixCheck.monoHorizontal(input, 1);
             assertThat(result, is(true));
         }
-
     @Test
     public void whenHasMonoHorizontalFalse() {
         char[][] input = {
@@ -37,7 +36,6 @@ public class MatrixCheckTest {
         boolean result = MatrixCheck.monoVertical(input, 2);
         assertThat(result, is(true));
     }
-
     @Test
     public void whenHasMonoVerticalFalse() {
         char[][] input = {
@@ -71,7 +69,6 @@ public class MatrixCheckTest {
         boolean result = MatrixCheck.isWin(input);
         assertThat(result, is(true));
     }
-
     @Test
     public void whenDataNotMonoByTrueThenFalse() {
         char[][] input = {
@@ -84,7 +81,6 @@ public class MatrixCheckTest {
         boolean result = MatrixCheck.isWin(input);
         assertThat(result, is(false));
     }
-
     @Test
     public void whenDataHMonoByTrueThenTrue() {
         char[][] input = {
@@ -97,5 +93,4 @@ public class MatrixCheckTest {
         boolean result = MatrixCheck.isWin(input);
         assertThat(result, is(true));
     }
-
-    }
+}
