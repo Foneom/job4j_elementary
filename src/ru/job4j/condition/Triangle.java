@@ -1,6 +1,5 @@
 package ru.job4j.condition;
 
-import ru.job4j.condition.TrqArea;
 public class Triangle {
 
     private Point first;
@@ -25,16 +24,6 @@ public class Triangle {
         }
 
     public static boolean exist(double a, double b, double c) {
-        boolean exs = a + b > c && b + c > a && a + c > b;
-        if (exs) {
-            return true;
-        }
-        return false;
+        return a + b > c && b + c > a && a + c > b;
     }
-    /**
-    public static boolean exist(double ab, double ac, double bc) {
-        boolean can = ab + ac > bc && ac + bc > ab && ab + bc > ac;
-        return can;
-    }
-     */
 }
