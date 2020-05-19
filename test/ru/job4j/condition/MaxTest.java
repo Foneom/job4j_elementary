@@ -23,4 +23,14 @@ public class MaxTest {
         int result = Max.max(2, 2);
         assertThat(result, is(2));
     }
+    @Test
+    public void when3Param() {
+        int result = Max.max(8, 4, 3);
+        assertThat(result, is(8));
+    }
+    @Test
+    public void when4Param() {
+        int result = Max.max(9, 5, 3, 2);
+        assertThat(result, is(9));
+    }
 }
