@@ -9,14 +9,12 @@ public class Max {
     }
 
     public static int max(int first, int second, int third) {
-        boolean condition = first > max(second, third);
-        int result = condition ? first : max(second, third);
+        int result = max(first, max(second, third));
         return result;
     }
 
     public static int max(int first, int second, int third, int fourth) {
-        boolean condition = first > max(second, third, fourth);
-        int result = condition ? first : max(second, third, fourth);
+        int result = max(first, max(second, third, fourth));
         return result;
     }
 }
